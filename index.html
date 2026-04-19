@@ -1,40 +1,317 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eduardo Zubreski Novossad</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZelpyrnDev — Desenvolvimento web criativo, rápido e visualmente marcante.">
+  <title>ZelpyrnDev | Portfólio Profissional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Eduardo Zubreski Novossad</h1>
-    <p>Estudante de programação | HTML, CSS e JavaScript</p>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress"></div>
+
+  <header class="site-header" id="topo">
+    <nav class="nav container">
+      <a class="logo" href="#topo">ZelpyrnDev</a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#projetos">Projetos</a>
+        <a href="#processo">Processo</a>
+        <a href="#stack">Stack</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="#contato">Solicitar orçamento</a>
+      </div>
+    </nav>
   </header>
 
-  <section>
-    <h2>Sobre mim</h2>
-    <p>
-      Tenho 15 anos e estou estudando desenvolvimento web. Ainda estou no começo,
-      mas venho aprendendo com prática e apoio de IA para criar sites e sistemas.
-    </p>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
 
-  <section>
-    <h2>Projetos</h2>
-    <ul>
-      <li>Site com login por Google</li>
-      <li>Projeto com Firebase</li>
-      <li>Sistema de vendas com Mercado Pago</li>
-      <li>Landing pages responsivas</li>
-    </ul>
-  </section>
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Desenvolvimento web com identidade forte</p>
+          <h1>Sites que parecem produto de empresa grande ⚡</h1>
+          <p class="hero-text">
+            Interfaces com cara premium, animações suaves, visual marcante e foco em conversão.
+            Ideal para landing pages, páginas de venda, área do cliente e experiências web mais vivas.
+          </p>
 
-  <section>
-    <h2>Contato</h2>
-    <p>GitHub: seuusuario</p>
-    <p>Email: seuemail@email.com</p>
-  </section>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary magnetic">Ver projetos</a>
+            <a href="#contato" class="btn btn-secondary magnetic">Começar projeto</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric glass reveal-soft">
+              <strong data-count="4">0</strong>
+              <span>Telas reais exibidas</span>
+            </div>
+            <div class="metric glass reveal-soft">
+              <strong data-count="100">0</strong>
+              <span>Design feito sob medida</span>
+            </div>
+            <div class="metric glass reveal-soft">
+              <strong data-count="24">0</strong>
+              <span>Efeitos e refinamentos visuais</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="floating-card main-shot tilt-card">
+            <img src="assets/hero-home.png" alt="Tela inicial da ZelpyrnDev">
+          </div>
+          <div class="floating-card side-shot tilt-card">
+            <img src="assets/dashboard.png" alt="Painel do cliente com pedidos e áreas internas">
+          </div>
+          <div class="badge-card glass">
+            <span>UI forte</span>
+            <span>Identidade memorável</span>
+            <span>Experiência premium</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-track">
+        <span>Landing Pages</span>
+        <span>Área do Cliente</span>
+        <span>Painel Administrativo</span>
+        <span>Chat Interno</span>
+        <span>Fluxos de Pedido</span>
+        <span>Integrações Futuras</span>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="container intro-grid">
+        <div class="intro-card glass reveal">
+          <p class="section-tag">Visão do projeto</p>
+          <h2>Um site que vende sua imagem antes mesmo da primeira conversa.</h2>
+          <p>
+            O conceito aqui mistura estética retrô-futurista, legibilidade, contraste forte e sensação de produto real.
+            Em vez de um portfólio genérico, a proposta é passar presença, autoridade visual e cuidado com detalhes.
+          </p>
+        </div>
+        <div class="intro-list reveal">
+          <article>
+            <h3>Direção visual</h3>
+            <p>Paleta autoral, tipografia marcante, sombras profundas e camadas que dão sensação de interface viva.</p>
+          </article>
+          <article>
+            <h3>Conversão</h3>
+            <p>CTA sempre visível, navegação objetiva, seções organizadas e foco total em mostrar valor rápido.</p>
+          </article>
+          <article>
+            <h3>Escalável</h3>
+            <p>Estrutura pronta para receber login real, integrações, formulários, CMS, Firebase e mais.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Projetos em destaque</p>
+          <h2>Telas reais organizadas como showcase premium</h2>
+          <p>Clique em qualquer projeto para abrir o detalhe em destaque.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-title="Landing principal" data-image="assets/hero-home.png" data-description="Tela inicial com identidade forte, CTA duplo, contraste alto e foco total em impacto visual.">
+            <div class="project-image">
+              <img src="assets/hero-home.png" alt="Landing principal da ZelpyrnDev">
+            </div>
+            <div class="project-body">
+              <span class="pill">Hero section</span>
+              <h3>Landing principal</h3>
+              <p>Estrutura pronta para captação de leads, venda de serviço e branding memorável.</p>
+              <button class="text-button">Ver detalhe</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-title="Painel do cliente" data-image="assets/dashboard.png" data-description="Área interna com destaque para pedidos, briefing, contrato, arquivos e revisões.">
+            <div class="project-image">
+              <img src="assets/dashboard.png" alt="Painel do cliente da plataforma">
+            </div>
+            <div class="project-body">
+              <span class="pill">Dashboard</span>
+              <h3>Painel do cliente</h3>
+              <p>Visual robusto para produto digital, com navegação clara e módulos separados.</p>
+              <button class="text-button">Ver detalhe</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-title="Andamento dos pedidos" data-image="assets/orders.png" data-description="Listagem organizada de pedidos com status, orçamento, extras e acesso rápido ao atendimento.">
+            <div class="project-image">
+              <img src="assets/orders.png" alt="Tela de acompanhamento de pedidos">
+            </div>
+            <div class="project-body">
+              <span class="pill">Workflow</span>
+              <h3>Andamento dos pedidos</h3>
+              <p>Boa para experiência pós-venda, acompanhamento e sensação de serviço profissionalizado.</p>
+              <button class="text-button">Ver detalhe</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-title="Chat com vendedor" data-image="assets/chat.png" data-description="Interface pensada para comunicação rápida entre cliente e atendimento, dentro da própria experiência.">
+            <div class="project-image">
+              <img src="assets/chat.png" alt="Chat com o vendedor dentro da área do cliente">
+            </div>
+            <div class="project-body">
+              <span class="pill">Atendimento</span>
+              <h3>Chat com vendedor</h3>
+              <p>Fluxo interessante para dar mais confiança, suporte e proximidade sem depender de WhatsApp.</p>
+              <button class="text-button">Ver detalhe</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="processo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Processo</p>
+          <h2>Estrutura de apresentação pensada para parecer uma operação madura</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>01</span>
+            <div>
+              <h3>Primeiro impacto</h3>
+              <p>Hero forte, promessa clara e visual instantaneamente reconhecível.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span>02</span>
+            <div>
+              <h3>Prova visual</h3>
+              <p>Imagens reais do sistema transformadas em vitrine com sensação de produto premium.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span>03</span>
+            <div>
+              <h3>Expansão futura</h3>
+              <p>Base pronta para login real, Firebase, formulários dinâmicos, pagamentos e e-mails automáticos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack">
+      <div class="container stack-grid">
+        <div class="stack-copy reveal">
+          <p class="section-tag">Stack sugerida</p>
+          <h2>Hoje estático e rápido. Amanhã pronto para virar sistema real.</h2>
+          <p>
+            A interface já foi montada de forma modular. Isso facilita evoluir para autenticação,
+            formulário com backend, integração com banco de dados e automações de negócio.
+          </p>
+        </div>
+
+        <div class="stack-cards">
+          <article class="mini-card glass reveal-soft">
+            <h3>Front-end</h3>
+            <p>HTML, CSS e JavaScript puro para carregar rápido e ser fácil de subir no GitHub Pages.</p>
+          </article>
+          <article class="mini-card glass reveal-soft">
+            <h3>Próximo passo</h3>
+            <p>Firebase Auth, Firestore, e-mail automático, painel admin e formulário com persistência.</p>
+          </article>
+          <article class="mini-card glass reveal-soft">
+            <h3>Contato</h3>
+            <p>Sem WhatsApp. A estrutura já favorece formulário, e-mail e botão para abrir atendimento dedicado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-tag">Contato</p>
+          <h2>Quer transformar isso em um portfólio ou site comercial real?</h2>
+          <p>
+            Este modelo foi preparado para impressionar visualmente e também para ser expandido.
+            Caso queira, depois dá para adicionar autenticação, formulário com envio real, área do cliente funcional,
+            banco de dados e integrações.
+          </p>
+
+          <div class="contact-points">
+            <div class="contact-point glass">
+              <strong>E-mail</strong>
+              <span>Troque no código pelo seu endereço real</span>
+            </div>
+            <div class="contact-point glass">
+              <strong>Entrega</strong>
+              <span>Pronto para subir no GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal" id="contactForm">
+          <label>
+            Nome
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="seuemail@dominio.com" required>
+          </label>
+          <label>
+            Projeto
+            <textarea name="mensagem" rows="5" placeholder="Conte o que você quer criar..." required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Enviar interesse</button>
+          <p class="form-note">Este formulário está em modo demonstração e mostra um feedback visual no front-end.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="currentYear"></span> ZelpyrnDev. Visual autoral, performance boa e base pronta para crescer.</p>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-box glass">
+      <button class="modal-close" data-close-modal aria-label="Fechar modal">×</button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="Preview ampliado do projeto">
+      </div>
+      <div class="modal-content">
+        <span class="pill">Preview ampliado</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Mensagem simulada com sucesso.</div>
 
   <script src="script.js"></script>
 </body>
